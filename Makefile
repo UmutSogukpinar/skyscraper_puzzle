@@ -8,6 +8,7 @@ UTIL_DIR = ./utils
 CHECK_DIR = ./check
 
 SOURCES = 	main.c \
+			map.c \
 			$(UTIL_DIR)/util_one.c $(UTIL_DIR)/parse.c \
 			$(CHECK_DIR)/check_args.c \
 

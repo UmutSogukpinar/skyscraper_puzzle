@@ -6,7 +6,7 @@
 /*   By: usogukpi <usogukpi@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/02/27 15:28:29 by usogukpi          #+#    #+#             */
-/*   Updated: 2025/02/27 17:04:19 by usogukpi         ###   ########.fr       */
+/*   Updated: 2025/02/27 18:10:11 by usogukpi         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -26,6 +26,7 @@ int	main(int argn, char **args)
 	if (!check_args(argn, args))
 		return (1);
 	main = parse_args(args);
+	get_maps(main);
 	free(main);
 	return (0);
 }

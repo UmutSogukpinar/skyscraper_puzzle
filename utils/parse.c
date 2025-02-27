@@ -6,7 +6,7 @@
 /*   By: usogukpi <usogukpi@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/02/27 16:37:19 by usogukpi          #+#    #+#             */
-/*   Updated: 2025/02/27 17:02:21 by usogukpi         ###   ########.fr       */
+/*   Updated: 2025/02/27 19:00:21 by usogukpi         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -30,6 +30,7 @@ t_skyscraper	*parse_args(char **args)
 	parse_down(new, args, 5);
 	parse_left(new, args, 9);
 	parse_right(new, args, 13);
+	new->solution_flag = c_false;
 	return (new);
 }
 

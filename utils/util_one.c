@@ -6,7 +6,7 @@
 /*   By: usogukpi <usogukpi@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/02/27 15:53:33 by usogukpi          #+#    #+#             */
-/*   Updated: 2025/02/27 17:00:12 by usogukpi         ###   ########.fr       */
+/*   Updated: 2025/02/27 18:32:39 by usogukpi         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -62,4 +62,19 @@ void	*ft_calloc(size_t num, size_t size)
 		return (NULL);
 	ft_bzero(p, total);
 	return (p);
+}
+
+void	*ft_memset(void *b, int c, size_t len)
+{
+	size_t			i;
+	unsigned char	*p;
+
+	p = (unsigned char *) b;
+	i = 0;
+	while (i < len)
+	{
+		p[i] = (unsigned char) c;
+		i++;
+	}
+	return (b);
 }
